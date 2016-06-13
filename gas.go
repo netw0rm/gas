@@ -15,7 +15,7 @@ func main() {
     go func() {
         in.WriteString("")
         fmt.Printf("it's begin")
-    }()
+    }
     if err != nil {
         fmt.Println(err)
         return
