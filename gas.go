@@ -13,7 +13,8 @@ func main() {
     cmd.Stdin = in
     err := cmd.Run()
     go func() {
-        in.WriteString("echo hello world")
+        in.WriteString("")
+        fmt.Printf("it's begin")
     }()
     if err != nil {
         fmt.Println(err)
